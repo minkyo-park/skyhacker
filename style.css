@@ -1512,7 +1512,21 @@ footer {
     
     .site-footer {
         margin: 5px;
-        padding: 15px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    
+    .footer-content {
+        gap: 1rem;
+    }
+    
+    .footer-container {
+        padding: 0;
+    }
+    
+    .footer-bottom {
+        margin-top: 0.5rem;
+        padding-top: 0.5rem;
     }
 }
 

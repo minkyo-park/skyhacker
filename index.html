@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스카이해커 | Sky Hacker</title>
+    <meta name="description" content="스카이해커에서 원하는 항공권을 클릭 한 번으로 각 플랫폼의 최저가를 비교해보세요.">
+    <meta name="keywords" content="Skyhacker, 스카이해커, 항공권 비교">
+    <meta name="author" content="스카이해커">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="스카이해커">
+    <meta property="og:title" content="스카이해커 | Skyhacker">
+    <meta property="og:description" content="스카이해커에서 원하는 항공권을 클릭 한 번으로 각 플랫폼의 최저가를 비교해보세요.">
+    <meta property="og:url" content="https://skyhacker.net">
+    <meta property="og:image" content="https://skyhacker.net/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="스카이해커">
+    <meta name="twitter:title" content="스카이해커 | Skyhacker">
+    <meta name="twitter:description" content="스카이해커에서 원하는 항공권을 클릭 한 번으로 각 플랫폼의 최저가를 비교해보세요.">
+    <meta name="twitter:image" content="https://skyhacker.net/og-image.jpg">
+    <link rel="canonical" href="https://skyhacker.net">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- 구조화된 데이터 -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "스카이해커",
+          "url": "https://skyhacker.net",
+          "description": "스카이해커에서 원하는 항공권을 클릭 한 번으로 각 플랫폼의 최저가를 비교해보세요.",
+          "applicationCategory": "TravelApplication",
+          "operatingSystem": "Web Browser",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "KRW"
+          }
+        }
+        </script>
+        
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "스카이해커",
+          "url": "https://skyhacker.net",
+          "logo": "https://skyhacker.net/favicon.png",
+         }
+        </script>
+        
+</head>
+<body>
+    <!-- 햄버거 메뉴 버튼 (모바일용) -->
+    <button class="hamburger-menu" id="hamburgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- 세로형 네비게이션 -->
+    <nav class="vertical-nav" id="verticalNav">
+        <div class="nav-content">
+            <!-- 로고와 사이트명 -->
+            <a href="/" class="nav-brand">
+                <div class="nav-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="logo-icon">
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" stroke-width="2" fill="currentColor" d="M14.187 8.096L15 5.25L15.813 8.096C16.0231 8.83114 16.4171 9.50062 16.9577 10.0413C17.4984 10.5819 18.1679 10.9759 18.903 11.186L21.75 12L18.904 12.813C18.1689 13.0231 17.4994 13.4171 16.9587 13.9577C16.4181 14.4984 16.0241 15.1679 15.814 15.903L15 18.75L14.187 15.904C13.9769 15.1689 13.5829 14.4994 13.0423 13.9587C12.5016 13.4181 11.8321 13.0241 11.097 12.814L8.25 12L11.096 11.187C11.8311 10.9769 12.5006 10.5829 13.0413 10.0423C13.5819 9.50162 13.9759 8.83214 14.186 8.097L14.187 8.096Z"></path>
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" stroke-width="2" fill="currentColor" d="M6 14.25L5.741 15.285C5.59267 15.8785 5.28579 16.4206 4.85319 16.8532C4.42059 17.2858 3.87853 17.5927 3.285 17.741L2.25 18L3.285 18.259C3.87853 18.4073 4.42059 18.7142 4.85319 19.1468C5.28579 19.5794 5.59267 20.1215 5.741 20.715L6 21.75L6.259 20.715C6.40725 20.1216 6.71398 19.5796 7.14639 19.147C7.5788 18.7144 8.12065 18.4075 8.714 18.259L9.75 18L8.714 17.741C8.12065 17.5925 7.5788 17.2856 7.14639 16.853C6.71398 16.4204 6.40725 15.8784 6.259 15.285L6 14.25Z"></path>
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" stroke-width="2" fill="currentColor" d="M6.5 4L6.303 4.5915C6.24777 4.75718 6.15472 4.90774 6.03123 5.03123C5.90774 5.15472 5.75718 5.24777 5.5915 5.303L5 5.5L5.5915 5.697C5.75718 5.75223 5.90774 5.84528 6.03123 5.96877C6.15472 6.09226 6.24777 6.24282 6.303 6.4085L6.5 7L6.697 6.4085C6.75223 6.24282 6.84528 6.09226 6.96877 5.96877C7.09226 5.84528 7.24282 5.75223 7.4085 5.697L8 5.5L7.4085 5.303C7.24282 5.24777 7.09226 5.15472 6.96877 5.03123C6.84528 4.90774 6.75223 4.75718 6.697 4.5915L6.5 4Z"></path>
+                    </svg>
+                </div>
+         
+            </a>
+            
+            <!-- 네비게이션 메뉴 -->
+            <div class="nav-menu">
+                <a href="/" class="nav-item active">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9,22 9,12 15,12 15,22"></polyline>
+                    </svg>
+                    홈
+                </a>
+                <a href="/usage.html" class="nav-item">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14,2 14,8 20,8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10,9 9,9 8,9"></polyline>
+                    </svg>
+                    사용방법
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 메인 컨텐츠 -->
+    <div class="main-content">
+        <div class="container">
+            <header>
+                <a href="/" class="logo-link">
+                    <div class="logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="logo-icon">
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" stroke-width="2" fill="currentColor" d="M14.187 8.096L15 5.25L15.813 8.096C16.0231 8.83114 16.4171 9.50062 16.9577 10.0413C17.4984 10.5819 18.1679 10.9759 18.903 11.186L21.75 12L18.904 12.813C18.1689 13.0231 17.4994 13.4171 16.9587 13.9577C16.4181 14.4984 16.0241 15.1679 15.814 15.903L15 18.75L14.187 15.904C13.9769 15.1689 13.5829 14.4994 13.0423 13.9587C12.5016 13.4181 11.8321 13.0241 11.097 12.814L8.25 12L11.096 11.187C11.8311 10.9769 12.5006 10.5829 13.0413 10.0423C13.5819 9.50162 13.9759 8.83214 14.186 8.097L14.187 8.096Z"></path>
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" stroke-width="2" fill="currentColor" d="M6 14.25L5.741 15.285C5.59267 15.8785 5.28579 16.4206 4.85319 16.8532C4.42059 17.2858 3.87853 17.5927 3.285 17.741L2.25 18L3.285 18.259C3.87853 18.4073 4.42059 18.7142 4.85319 19.1468C5.28579 19.5794 5.59267 20.1215 5.741 20.715L6 21.75L6.259 20.715C6.40725 20.1216 6.71398 19.5796 7.14639 19.147C7.5788 18.7144 8.12065 18.4075 8.714 18.259L9.75 18L8.714 17.741C8.12065 17.5925 7.5788 17.2856 7.14639 16.853C6.71398 16.4204 6.40725 15.8784 6.259 15.285L6 14.25Z"></path>
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" stroke-width="2" fill="currentColor" d="M6.5 4L6.303 4.5915C6.24777 4.75718 6.15472 4.90774 6.03123 5.03123C5.90774 5.15472 5.75718 5.24777 5.5915 5.303L5 5.5L5.5915 5.697C5.75718 5.75223 5.90774 5.84528 6.03123 5.96877C6.15472 6.09226 6.24777 6.24282 6.303 6.4085L6.5 7L6.697 6.4085C6.75223 6.24282 6.84528 6.09226 6.96877 5.96877C7.09226 5.84528 7.24282 5.75223 7.4085 5.697L8 5.5L7.4085 5.303C7.24282 5.24777 7.09226 5.15472 6.96877 5.03123C6.84528 4.90774 6.75223 4.75718 6.697 4.5915L6.5 4Z"></path>
+                        </svg>
+                    </div>
+                </a>
+                <h1>Where do you want to fly?</h1>
+                <p>Find the lowest fares with one simple search.</p>
+            </header>
+
+        <main>
+            <form id="flightSearchForm" class="search-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="departure">출발지</label>
+                        <div class="group">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+                                <g>
+                                    <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                                </g>
+                            </svg>
+                            <input type="text" id="departure" class="input" placeholder="도시명, 공항명, IATA 코드 입력" autocomplete="off">
+                        </div>
+                        <div id="departureSuggestions" class="suggestions"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="arrival">도착지</label>
+                        <div class="group">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+                                <g>
+                                    <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                                </g>
+                            </svg>
+                            <input type="text" id="arrival" class="input" placeholder="도시명, 공항명, IATA 코드 입력" autocomplete="off">
+                        </div>
+                        <div id="arrivalSuggestions" class="suggestions"></div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="departureDate">출발일</label>
+                        <div class="calendar-wrapper">
+                            <div class="calendar-input" id="departureCalendarInput" tabindex="0" role="button" aria-expanded="false" aria-haspopup="dialog">
+                                <span class="calendar-display" id="departureDateDisplay">날짜 선택</span>
+                                <svg class="calendar-chevron" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M7 10l5 5 5-5z"></path>
+                                </svg>
+                            </div>
+                            <input type="hidden" id="departureDate" required>
+                            <div class="calendar-popup" id="departureCalendarPopup" role="dialog" aria-modal="true" aria-label="출발일 선택">
+                                <div class="calendar-container">
+                                    <div class="calendar-header">
+                                        <button class="calendar-nav" aria-label="이전 달" data-action="prev">
+                                            <svg viewBox="0 0 24 24" width="16" height="16">
+                                                <path d="M15 18l-6-6 6-6"></path>
+                                            </svg>
+                                        </button>
+                                        <div class="calendar-title" id="departureCalendarTitle"></div>
+                                        <button class="calendar-nav" aria-label="다음 달" data-action="next">
+                                            <svg viewBox="0 0 24 24" width="16" height="16">
+                                                <path d="M9 18l6-6-6-6"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="calendar-grid">
+                                        <div class="calendar-weekdays">
+                                            <div class="calendar-weekday">일</div>
+                                            <div class="calendar-weekday">월</div>
+                                            <div class="calendar-weekday">화</div>
+                                            <div class="calendar-weekday">수</div>
+                                            <div class="calendar-weekday">목</div>
+                                            <div class="calendar-weekday">금</div>
+                                            <div class="calendar-weekday">토</div>
+                                        </div>
+                                        <div class="calendar-days" id="departureCalendarDays" role="grid"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="returnDate">귀국일</label>
+                        <div class="calendar-wrapper">
+                            <div class="calendar-input" id="returnCalendarInput" tabindex="0" role="button" aria-expanded="false" aria-haspopup="dialog">
+                                <span class="calendar-display" id="returnDateDisplay">날짜 선택</span>
+                                <svg class="calendar-chevron" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M7 10l5 5 5-5z"></path>
+                                </svg>
+                            </div>
+                            <input type="hidden" id="returnDate" required>
+                            <div class="calendar-popup" id="returnCalendarPopup" role="dialog" aria-modal="true" aria-label="귀국일 선택">
+                                <div class="calendar-container">
+                                    <div class="calendar-header">
+                                        <button class="calendar-nav" aria-label="이전 달" data-action="prev">
+                                            <svg viewBox="0 0 24 24" width="16" height="16">
+                                                <path d="M15 18l-6-6 6-6"></path>
+                                            </svg>
+                                        </button>
+                                        <div class="calendar-title" id="returnCalendarTitle"></div>
+                                        <button class="calendar-nav" aria-label="다음 달" data-action="next">
+                                            <svg viewBox="0 0 24 24" width="16" height="16">
+                                                <path d="M9 18l6-6-6-6"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="calendar-grid">
+                                        <div class="calendar-weekdays">
+                                            <div class="calendar-weekday">일</div>
+                                            <div class="calendar-weekday">월</div>
+                                            <div class="calendar-weekday">화</div>
+                                            <div class="calendar-weekday">수</div>
+                                            <div class="calendar-weekday">목</div>
+                                            <div class="calendar-weekday">금</div>
+                                            <div class="calendar-weekday">토</div>
+                                        </div>
+                                        <div class="calendar-days" id="returnCalendarDays" role="grid"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="passengers">인원</label>
+                        <select id="passengers">
+                            <option value="1">성인 1명</option>
+                            <option value="2">성인 2명</option>
+                            <option value="3">성인 3명</option>
+                            <option value="4">성인 4명</option>
+                            <option value="5">성인 5명</option>
+                            <option value="6">성인 6명</option>
+                            <option value="7">성인 7명</option>
+                            <option value="8">성인 8명</option>
+                            <option value="9">성인 9명</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cabinClass">좌석 클래스</label>
+                        <select id="cabinClass">
+                            <option value="economy">이코노미</option>
+                            <option value="business">비즈니스</option>
+                            <option value="first">퍼스트</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="search-btn-container">
+                    <button type="button" class="button">
+                        <div class="dots_border"></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="sparkle">
+                            <path class="path" stroke-linejoin="round" stroke-linecap="round" stroke="black" fill="black" d="M14.187 8.096L15 5.25L15.813 8.096C16.0231 8.83114 16.4171 9.50062 16.9577 10.0413C17.4984 10.5819 18.1679 10.9759 18.903 11.186L21.75 12L18.904 12.813C18.1689 13.0231 17.4994 13.4171 16.9587 13.9577C16.4181 14.4984 16.0241 15.1679 15.814 15.903L15 18.75L14.187 15.904C13.9769 15.1689 13.5829 14.4994 13.0423 13.9587C12.5016 13.4181 11.8321 13.0241 11.097 12.814L8.25 12L11.096 11.187C11.8311 10.9769 12.5006 10.5829 13.0413 10.0423C13.5819 9.50162 13.9759 8.83214 14.186 8.097L14.187 8.096Z"></path>
+                            <path class="path" stroke-linejoin="round" stroke-linecap="round" stroke="black" fill="black" d="M6 14.25L5.741 15.285C5.59267 15.8785 5.28579 16.4206 4.85319 16.8532C4.42059 17.2858 3.87853 17.5927 3.285 17.741L2.25 18L3.285 18.259C3.87853 18.4073 4.42059 18.7142 4.85319 19.1468C5.28579 19.5794 5.59267 20.1215 5.741 20.715L6 21.75L6.259 20.715C6.40725 20.1216 6.71398 19.5796 7.14639 19.147C7.5788 18.7144 8.12065 18.4075 8.714 18.259L9.75 18L8.714 17.741C8.12065 17.5925 7.5788 17.2856 7.14639 16.853C6.71398 16.4204 6.40725 15.8784 6.259 15.285L6 14.25Z"></path>
+                            <path class="path" stroke-linejoin="round" stroke-linecap="round" stroke="black" fill="black" d="M6.5 4L6.303 4.5915C6.24777 4.75718 6.15472 4.90774 6.03123 5.03123C5.90774 5.15472 5.75718 5.24777 5.5915 5.303L5 5.5L5.5915 5.697C5.75718 5.75223 5.90774 5.84528 6.03123 5.96877C6.15472 6.09226 6.24777 6.24282 6.303 6.4085L6.5 7L6.697 6.4085C6.75223 6.24282 6.84528 6.09226 6.96877 5.96877C7.09226 5.84528 7.24282 5.75223 7.4085 5.697L8 5.5L7.4085 5.303C7.24282 5.24777 7.09226 5.15472 6.96877 5.03123C6.84528 4.90774 6.75223 4.75718 6.697 4.5915L6.5 4Z"></path>
+                        </svg>
+                        <span class="text_button">Search Flights</span>
+                    </button>
+                </div>
+            </form>
+        </main>
+
+        <main id="searchResults" class="results-section" style="display: none;">
+            <h2>검색 결과 링크</h2>
+            <div id="platformLinks" class="platform-links"></div>
+        </main>
+
+    </div>
+
+    <!-- Loading Animation -->
+    <div id="loadingOverlay" class="loading-overlay" style="display: none;">
+        <div class="loader">
+            <div class="square" id="sq1"></div>
+            <div class="square" id="sq2"></div>
+            <div class="square" id="sq3"></div>
+            <div class="square" id="sq4"></div>
+            <div class="square" id="sq5"></div>
+            <div class="square" id="sq6"></div>
+            <div class="square" id="sq7"></div>
+            <div class="square" id="sq8"></div>
+            <div class="square" id="sq9"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- 사이트 정보 -->
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="footer-logo-icon">
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" stroke-width="2" fill="currentColor" d="M14.187 8.096L15 5.25L15.813 8.096C16.0231 8.83114 16.4171 9.50062 16.9577 10.0413C17.4984 10.5819 18.1679 10.9759 18.903 11.186L21.75 12L18.904 12.813C18.1689 13.0231 17.4994 13.4171 16.9587 13.9577C16.4181 14.4984 16.0241 15.1679 15.814 15.903L15 18.75L14.187 15.904C13.9769 15.1689 13.5829 14.4994 13.0423 13.9587C12.5016 13.4181 11.8321 13.0241 11.097 12.814L8.25 12L11.096 11.187C11.8311 10.9769 12.5006 10.5829 13.0413 10.0423C13.5819 9.50162 13.9759 8.83214 14.186 8.097L14.187 8.096Z"></path>
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" stroke-width="2" fill="currentColor" d="M6 14.25L5.741 15.285C5.59267 15.8785 5.28579 16.4206 4.85319 16.8532C4.42059 17.2858 3.87853 17.5927 3.285 17.741L2.25 18L3.285 18.259C3.87853 18.4073 4.42059 18.7142 4.85319 19.1468C5.28579 19.5794 5.59267 20.1215 5.741 20.715L6 21.75L6.259 20.715C6.40725 20.1216 6.71398 19.5796 7.14639 19.147C7.5788 18.7144 8.12065 18.4075 8.714 18.259L9.75 18L8.714 17.741C8.12065 17.5925 7.5788 17.2856 7.14639 16.853C6.71398 16.4204 6.40725 15.8784 6.259 15.285L6 14.25Z"></path>
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" stroke-width="2" fill="currentColor" d="M6.5 4L6.303 4.5915C6.24777 4.75718 6.15472 4.90774 6.03123 5.03123C5.90774 5.15472 5.75718 5.24777 5.5915 5.303L5 5.5L5.5915 5.697C5.75718 5.75223 5.90774 5.84528 6.03123 5.96877C6.15472 6.09226 6.24777 6.24282 6.303 6.4085L6.5 7L6.697 6.4085C6.75223 6.24282 6.84528 6.09226 6.96877 5.96877C7.09226 5.84528 7.24282 5.75223 7.4085 5.697L8 5.5L7.4085 5.303C7.24282 5.24777 7.09226 5.15472 6.96877 5.03123C6.84528 4.90774 6.75223 4.75718 6.697 4.5915L6.5 4Z"></path>
+                        </svg>
+                        <h3 class="footer-title">Skyhacker</h3>
+                    </div>
+                </div>
+
+                <!-- 페이지 링크 -->
+                <div class="footer-section">
+                    <h4 class="footer-heading">Pages</h4>
+                    <ul class="footer-links">
+                        <li><a href="/" class="footer-link">홈</a></li>
+                        <li><a href="/usage.html" class="footer-link">사용방법</a></li>
+                    </ul>
+                </div>
+
+                <!-- 연락처 -->
+                <div class="footer-section">
+                    <h4 class="footer-heading">Contact</h4>
+                    <div class="contact-info">
+                        <a href="mailto:contact@skyhacker.net" class="footer-link contact-link">
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            contact@skyhacker.net
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 하단 정보 -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">
+                        © 2024 Skyhacker. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 분리된 JavaScript 파일들 -->
+    <script src="airport-mapping.js"></script>
+    <script src="url-templates.js"></script>
+    <script src="form-options.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

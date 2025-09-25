@@ -1575,6 +1575,23 @@ footer {
     .footer-toggle {
         display: none;
     }
+    
+    .footer-sections {
+        display: flex !important;
+    }
+}
+
+/* 데스크톱에서 토글 버튼 숨기기 */
+@media (min-width: 769px) {
+    .footer-toggle {
+        display: none !important;
+    }
+    
+    .footer-sections {
+        display: flex !important;
+        flex-direction: row;
+        gap: 2rem;
+    }
 }
 
 /* Success Animation */

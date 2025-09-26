@@ -113,7 +113,7 @@ const PLATFORM_TEMPLATES = {
         color: '#ff6900',
         domain: 'www.agoda.com',
         baseUrl: 'https://www.agoda.com/ko-kr/flights/results',
-        template: '?cid=1924244&tag=416D594A47534178556F50535364246F377230446E51&departureFrom={departureCode}&departureFromType=1&arrivalTo={arrivalCode}&arrivalToType=1&departDate={departureDate}&returnDate={returnDate}&searchType=2&cabinType={cabinType}&adults={passengers}&sort=8',
+        template: '?cid=123456&tag=416D594A47534178556F50535364246F377230446E51&departureFrom={departureCode}&departureFromType=1&arrivalTo={arrivalCode}&arrivalToType=1&departDate={departureDate}&returnDate={returnDate}&searchType=2&cabinType={cabinType}&adults={passengers}&sort=8',
         cabinTypeMapping: {
             'economy': 'Economy',
             'business': 'Business',

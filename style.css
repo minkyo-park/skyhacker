@@ -1382,7 +1382,7 @@ footer {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     gap: 30px;
-    margin-bottom: 20px;
+
 }
 
 .footer-section {
@@ -1519,8 +1519,8 @@ footer {
     .footer-content {
         gap: 0.5rem;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        align-items: flex-start;
+        text-align: left;
     }
     
     .footer-container {
@@ -1534,7 +1534,7 @@ footer {
     
     .footer-logo {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         gap: 0.5rem;
         margin-bottom: 0.5rem;
@@ -1553,13 +1553,13 @@ footer {
     .footer-content {
         gap: 0.5rem;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        align-items: flex-start;
+        text-align: left;
     }
     
     .footer-logo {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         gap: 0.5rem;
         margin-bottom: 0.5rem;

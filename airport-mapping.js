@@ -259,7 +259,7 @@ function searchAirports(query) {
     });
     
     console.log('searchAirports 결과:', results);
-    return results.slice(0, 8); // 최대 8개 제안
+    return results; // 모든 결과 반환
 }
 
 // 공항 코드 검증 함수

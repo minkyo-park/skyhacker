@@ -28,8 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // 이벤트 리스너 설정
     setupEventListeners();
     
-    // 푸터 토글 초기화
-    initFooterToggle();
 });
 
 
@@ -733,24 +731,6 @@ function selectDate(type, date) {
     }
 }
 
-// 푸터 토글 기능
-function initFooterToggle() {
-    const footerToggle = document.getElementById('footerToggle');
-    const footerSections = document.getElementById('footerSections');
-    
-    if (footerToggle && footerSections) {
-        footerToggle.addEventListener('click', function() {
-            footerSections.classList.toggle('open');
-            footerToggle.classList.toggle('open');
-            
-            if (footerSections.classList.contains('open')) {
-                footerToggle.textContent = '접기';
-            } else {
-                footerToggle.textContent = '더 보기';
-            }
-        });
-    }
-}
 
 // 로딩 애니메이션 제어 함수들
 function showLoadingAnimation() {

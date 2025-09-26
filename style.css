@@ -1517,8 +1517,10 @@ footer {
     }
     
     .footer-content {
-        gap: 0;
+        gap: 1rem;
         flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
     
     .footer-container {
@@ -1530,67 +1532,17 @@ footer {
         padding-top: 0.5rem;
     }
     
-    /* 모바일 푸터 토글 버튼 */
-    .footer-toggle {
-        display: block;
-        background: rgba(255, 255, 255, 0.1);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        border-radius: 8px;
-        padding: 8px 12px;
-        margin: 10px 0;
-        color: #ffffff;
-        cursor: pointer;
-        text-align: center;
-        font-size: 14px;
-        transition: all 0.3s ease;
-    }
-    
-    .footer-toggle:hover {
-        background: rgba(255, 255, 255, 0.15);
-    }
-    
-    .footer-toggle::after {
-        content: "▼";
-        margin-left: 8px;
-        transition: transform 0.3s ease;
-    }
-    
-    .footer-toggle.open::after {
-        transform: rotate(180deg);
-    }
-    
-    /* 모바일에서 푸터 섹션들 숨기기 */
-    .footer-sections {
-        display: none;
-        margin-top: 10px;
-        gap: 1rem;
-    }
-    
-    .footer-sections.open {
+    .footer-logo {
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
     }
     
-    /* 데스크톱에서는 토글 숨기기 */
-    .footer-toggle {
-        display: none;
-    }
-    
-    .footer-sections {
-        display: flex !important;
-    }
-}
-
-/* 데스크톱에서 토글 버튼 숨기기 */
-@media (min-width: 769px) {
-    .footer-toggle {
-        display: none !important;
-    }
-    
-    .footer-sections {
-        display: flex !important;
-        flex-direction: row;
-        gap: 2rem;
+    .footer-email {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
     }
 }
 

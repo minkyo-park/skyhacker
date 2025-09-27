@@ -372,7 +372,7 @@ function displayLinks(links, formData = null) {
                 </div>
                 <div class="platform-info-new">
                     <p class="platform-name">${link.platform.name}</p>
-                    <p class="platform-desc">에서 해당 항공권 최저가 조회</p>
+                    <p class="platform-desc">에서 콜드스타트(Pure Link)로 접속하기</p>
                 </div>
                 <div class="arrow-btn" onclick="copyToClipboard('${link.url}', this); event.preventDefault(); event.stopPropagation();">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">

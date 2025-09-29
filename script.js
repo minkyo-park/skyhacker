@@ -387,6 +387,12 @@ function displayLinks(links, formData = null) {
     resultsSection.style.display = 'block';
     resultsSection.scrollIntoView({ behavior: 'smooth' });
     
+    // 수수료 안내 섹션 표시
+    const commissionNotice = document.getElementById('commissionNotice');
+    if (commissionNotice) {
+        commissionNotice.style.display = 'block';
+    }
+    
     // 성공 애니메이션
     platformLinks.classList.add('success-animation');
     setTimeout(() => {

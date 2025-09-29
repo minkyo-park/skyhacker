@@ -34,7 +34,7 @@ const PLATFORM_TEMPLATES = {
         color: '#ff6900',
         domain: 'kr.trip.com',
         baseUrl: 'https://kr.trip.com/flights',
-        template: '/showfarefirst?dcity={departureCode}&acity={arrivalCode}&ddate={departureDate}&rdate={returnDate}&triptype=rt&class={classCode}&lowpricesource=searchform&quantity={passengers}&searchboxarg=t&nonstoponly=off&locale=ko-KR&curr=KRW',
+        template: '/showfarefirst?dcity={departureCode}&acity={arrivalCode}&ddate={departureDate}&rdate={returnDate}&triptype=rt&class={classCode}&lowpricesource=searchform&quantity={passengers}&searchboxarg=t&nonstoponly=off&locale=ko-KR&curr=KRW&sid=2908853&allianceid=664610&ouid=A100692912%7C293189231UWsAf%7C9999%7C3%7C0',
         codeMapping: {
             'SEL': 'sel', 'ICN': 'sel', 'GMP': 'sel',
             'TYO': 'nrt', 'NRT': 'nrt', 'HND': 'nrt',
@@ -59,7 +59,7 @@ const PLATFORM_TEMPLATES = {
         color: '#0064e6',
         domain: 'www.skyscanner.co.kr',
         baseUrl: 'https://www.skyscanner.co.kr/transport/flights',
-        template: '/{departureCode}/{arrivalCode}/{departureDateShort}/{returnDateShort}/?adultsv2={passengers}&cabinclass={cabinClass}&childrenv2=&ref=home&rtn=1&preferdirects=false&outboundaltsenabled=false&inboundaltsenabled=false',
+        template: '/{departureCode}/{arrivalCode}/{departureDateShort}/{returnDateShort}/?adultsv2={passengers}&cabinclass={cabinClass}&childrenv2=&ref=home&rtn=1&preferdirects=false&outboundaltsenabled=false&inboundaltsenabled=false&irclickid=_xxdjc0z9jwkaxw62inxyn2yxw3222c2ugvbv1que00&associateid=AFF_TRA_19354_00001&utm_medium=affiliate&utm_source=6008601-mrpark&utm_campaign=&campaign_id=6008601&utm_content=Online%20Tracking%20Link&adid=1027991&click_timestamp=1759135077776&irmweb=&irgwc=1',
         codeMapping: {
             'SEL': 'sela', 'ICN': 'sela', 'GMP': 'sela',
             'TYO': 'ctao', 'NRT': 'ctao', 'HND': 'ctao',
@@ -84,7 +84,8 @@ const PLATFORM_TEMPLATES = {
         color: '#ff6b35',
         domain: 'myrealtrip.com',
         baseUrl: 'https://flights.myrealtrip.com/air/b2c/AIR/INT/AIRINTSCH0100100010.k1',
-        template: '?initform=RT&domintgubun=I&depctycd={departureCode}&depctycd={arrivalCode}&depctycd=&depctycd=&depctynm={departureName}&depctynm={arrivalName}&depctynm=&depctynm=&arrctycd={arrivalCode}&arrctycd={departureCode}&arrctycd=&arrctycd=&arrctynm={arrivalName}&arrctynm={departureName}&arrctynm=&arrctynm=&depdt={departureDate}&depdt={returnDate}&depdt=&depdt=&opencase=N&opencase=N&opencase=N&openday=&openday=&openday=&depdomintgbn=I&tasktype=B2C&servicecacheyn=Y&adtcount={passengers}&chdcount=0&infcount=0&cabinclass={classCode}&cabinsepflag=Y&KSESID=air%3Ab2c%3ASELK138RB%3ASELK138RB%3A%3A00&preferaircd=&secrchType=FARE&maxprice=&availcount=250',
+        template: '?initform=RT&domintgubun=I&depctycd={departureCode}&depctycd={arrivalCode}&depctycd=&depctycd=&depctynm={departureName}&depctynm={arrivalName}&depctynm=&depctynm=&arrctycd={arrivalCode}&arrctycd={departureCode}&arrctycd=&arrctycd=&arrctynm={arrivalName}&arrctynm={departureName}&arrctynm=&arrctynm=&depdt={departureDate}&depdt={returnDate}&depdt=&depdt=&opencase=N&opencase=N&opencase=N&openday=&openday=&openday=&depdomintgbn=I&tasktype=B2C&servicecacheyn=Y&adtcount={passengers}&chdcount=0&infcount=0&cabinclass={classCode}&cabinsepflag=Y&KSESID=air%3Ab2c%3ASELK138RB%3ASELK138RB%3A%3A00&preferaircd=&secrchType=FARE&maxprice=&availcount=250&mylink_id=1060146&t_scope=86400&utm_source=mktpartner',
+
         cityNameMapping: {
             'ICN': '인천', 'GMP': '서울', 'SEL': '서울',
             'NRT': '도쿄', 'HND': '도쿄', 'TYO': '도쿄',
@@ -113,7 +114,7 @@ const PLATFORM_TEMPLATES = {
         color: '#ff6900',
         domain: 'www.agoda.com',
         baseUrl: 'https://www.agoda.com/ko-kr/flights/results',
-        template: '?cid=123456&tag=416D594A47534178556F50535364246F377230446E51&departureFrom={departureCode}&departureFromType=1&arrivalTo={arrivalCode}&arrivalToType=1&departDate={departureDate}&returnDate={returnDate}&searchType=2&cabinType={cabinType}&adults={passengers}&sort=8',
+        template: '?cid=1729890&tag=29318879hoQ2sg68da3c574b&departureFrom={departureCode}&departureFromType=1&arrivalTo={arrivalCode}&arrivalToType=1&departDate={departureDate}&returnDate={returnDate}&searchType=2&cabinType={cabinType}&adults={passengers}&sort=8',
         cabinTypeMapping: {
             'economy': 'Economy',
             'business': 'Business',
@@ -129,7 +130,7 @@ const PLATFORM_TEMPLATES = {
         color: '#0078d2',
         domain: 'www.expedia.co.kr',
         baseUrl: 'https://www.expedia.co.kr/Flights-Search',
-        template: '?leg1=from:{departureName},to:{arrivalName},departure:{departureDateExpedia}TANYT&leg2=from:{arrivalName},to:{departureName},departure:{returnDateExpedia}TANYT&trip=roundtrip&passengers=adults:{passengers},children:0,infantinlap:N&options=cabinClass:{cabinClass}&mode=search&pageId=0',
+        template: '?leg1=from:{departureName},to:{arrivalName},departure:{departureDateExpedia}TANYT&leg2=from:{arrivalName},to:{departureName},departure:{returnDateExpedia}TANYT&trip=roundtrip&passengers=adults:{passengers},children:0,infantinlap:N&options=cabinClass:{cabinClass}&mode=search&pageId=0&siteid=100240&langid=1042&affcid=kr.network.linkprice.A100699161&afflid=A100699161|293188891UUcVf|9999|3|0',
         cityNameMapping: {
             'ICN': '인천 (ICN)', 'GMP': '서울 (GMP)', 'SEL': '서울 (GMP)',
             'NRT': '도쿄 (NRT)', 'HND': '도쿄 (HND)', 'TYO': '도쿄 (NRT)',
@@ -159,7 +160,7 @@ const PLATFORM_TEMPLATES = {
         color: '#ff6900',
         domain: 'www.hotelscombined.co.kr',
         baseUrl: 'https://www.hotelscombined.co.kr/flights',
-        template: '/{departureCode}-{arrivalCode}/{departureDate}/{returnDate}/{passengers}adults?sort=bestflight_a',
+        template: '/{departureCode}-{arrivalCode}/{departureDate}/{returnDate}/{passengers}adults?sort=bestflight_a&end_cid=293188911UUdGX68da3f3665&skipapp=true',
         codeMapping: {
             'SEL': 'SEL', 'ICN': 'SEL', 'GMP': 'SEL',
             'TYO': 'TYO', 'NRT': 'TYO', 'HND': 'TYO',

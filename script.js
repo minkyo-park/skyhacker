@@ -604,11 +604,13 @@ function renderCalendar(type) {
     const firstDay = new Date(year, month, 1);
     const lastDay = new Date(year, month + 1, 0);
     const startDate = new Date(firstDay);
-    startDate.setDate(startDate.getDate() - firstDay.getDay());
+    // 일요일(0)부터 시작하도록 수정
+    const dayOfWeek = firstDay.getDay();
+    startDate.setDate(startDate.getDate() - dayOfWeek);
     
     daysContainer.innerHTML = '';
     
-    for (let i = 0; i < 42; i++) {
+    for (let i = 0; i < 49; i++) {
         const date = new Date(startDate);
         date.setDate(startDate.getDate() + i);
         

@@ -9,15 +9,6 @@ const PLATFORM_TEMPLATES = {
         domain: 'flight.naver.com',
         baseUrl: 'https://flight.naver.com/flights/international',
         template: '/{departureCode}-{arrivalCode}-{departureDateShort}/{arrivalCode}-{departureCode}-{returnDateShort}?adult={passengers}&fareType={fareType}',
-        codeMapping: {
-            'SEL': 'SEL', 'ICN': 'SEL', 'GMP': 'SEL',
-            'TYO': 'NRT', 'NRT': 'NRT', 'HND': 'NRT',
-            'OSA': 'KIX', 'KIX': 'KIX', 'FUK': 'FUK',
-            'BKK': 'BKK', 'TPE': 'TPE', 'SIN': 'SIN',
-            'HKG': 'HKG', 'PVG': 'PVG', 'PEK': 'PEK',
-            'SGN': 'SGN', 'HAN': 'HAN', 'MNL': 'MNL',
-            'CGK': 'CGK', 'DPS': 'DPS', 'KUL': 'KUL'
-        },
         fareTypeMapping: {
             'economy': 'Y',
             'business': 'C',
@@ -35,15 +26,6 @@ const PLATFORM_TEMPLATES = {
         domain: 'kr.trip.com',
         baseUrl: 'https://kr.trip.com/flights',
         template: '/showfarefirst?dcity={departureCode}&acity={arrivalCode}&ddate={departureDate}&rdate={returnDate}&triptype=rt&class={classCode}&lowpricesource=searchform&quantity={passengers}&searchboxarg=t&nonstoponly=off&locale=ko-KR&curr=KRW&sid=2908853&allianceid=664610&ouid=A100692912%7C293189231UWsAf%7C9999%7C3%7C0',
-        codeMapping: {
-            'SEL': 'sel', 'ICN': 'sel', 'GMP': 'sel',
-            'TYO': 'nrt', 'NRT': 'nrt', 'HND': 'nrt',
-            'OSA': 'osa', 'KIX': 'osa', 'FUK': 'fuk',
-            'BKK': 'bkk', 'TPE': 'tpe', 'SIN': 'sin',
-            'HKG': 'hkg', 'PVG': 'sha', 'PEK': 'pek',
-            'SGN': 'sgn', 'HAN': 'han', 'MNL': 'mnl',
-            'CGK': 'cgk', 'DPS': 'dps', 'KUL': 'kul'
-        },
         classMapping: {
             'economy': 'y',
             'business': 'c',
@@ -60,15 +42,6 @@ const PLATFORM_TEMPLATES = {
         domain: 'www.skyscanner.co.kr',
         baseUrl: 'https://www.skyscanner.co.kr/transport/flights',
         template: '/{departureCode}/{arrivalCode}/{departureDateShort}/{returnDateShort}/?adultsv2={passengers}&cabinclass={cabinClass}&childrenv2=&ref=home&rtn=1&preferdirects=false&outboundaltsenabled=false&inboundaltsenabled=false&irclickid=_xxdjc0z9jwkaxw62inxyn2yxw3222c2ugvbv1que00&associateid=AFF_TRA_19354_00001&utm_medium=affiliate&utm_source=6008601-mrpark&utm_campaign=&campaign_id=6008601&utm_content=Online%20Tracking%20Link&adid=1027991&click_timestamp=1759135077776&irmweb=&irgwc=1',
-        codeMapping: {
-            'SEL': 'sela', 'ICN': 'sela', 'GMP': 'sela',
-            'TYO': 'ctao', 'NRT': 'ctao', 'HND': 'ctao',
-            'OSA': 'osa', 'KIX': 'osa', 'FUK': 'fuk',
-            'BKK': 'bkk', 'TPE': 'tpe', 'SIN': 'sin',
-            'HKG': 'hkg', 'PVG': 'sha', 'PEK': 'pek',
-            'SGN': 'sgn', 'HAN': 'han', 'MNL': 'mnl',
-            'CGK': 'cgk', 'DPS': 'dps', 'KUL': 'kul'
-        },
         cabinClassMapping: {
             'economy': 'economy',
             'business': 'business',
@@ -85,20 +58,6 @@ const PLATFORM_TEMPLATES = {
         domain: 'myrealtrip.com',
         baseUrl: 'https://flights.myrealtrip.com/air/b2c/AIR/INT/AIRINTSCH0100100010.k1',
         template: '?initform=RT&domintgubun=I&depctycd={departureCode}&depctycd={arrivalCode}&depctycd=&depctycd=&depctynm={departureName}&depctynm={arrivalName}&depctynm=&depctynm=&arrctycd={arrivalCode}&arrctycd={departureCode}&arrctycd=&arrctycd=&arrctynm={arrivalName}&arrctynm={departureName}&arrctynm=&arrctynm=&depdt={departureDate}&depdt={returnDate}&depdt=&depdt=&opencase=N&opencase=N&opencase=N&openday=&openday=&openday=&depdomintgbn=I&tasktype=B2C&servicecacheyn=Y&adtcount={passengers}&chdcount=0&infcount=0&cabinclass={classCode}&cabinsepflag=Y&KSESID=air%3Ab2c%3ASELK138RB%3ASELK138RB%3A%3A00&preferaircd=&secrchType=FARE&maxprice=&availcount=250&mylink_id=1060146&t_scope=86400&utm_source=mktpartner',
-
-        cityNameMapping: {
-            'ICN': '인천', 'GMP': '서울', 'SEL': '서울',
-            'NRT': '도쿄', 'HND': '도쿄', 'TYO': '도쿄',
-            'KIX': '오사카', 'OSA': '오사카', 'FUK': '후쿠오카',
-            'BKK': '방콕', 'DMK': '방콕', 'TPE': '타이베이',
-            'SIN': '싱가포르', 'HKG': '홍콩', 'PVG': '상하이',
-            'PEK': '베이징', 'SGN': '호치민', 'HAN': '하노이',
-            'MNL': '마닐라', 'CGK': '자카르타', 'DPS': '발리',
-            'KUL': '쿠알라룸푸르', 'LAX': '로스앤젤레스',
-            'JFK': '뉴욕', 'SFO': '샌프란시스코',
-            'LHR': '런던', 'CDG': '파리', 'FRA': '프랑크푸르트',
-            'AMS': '암스테르담', 'SYD': '시드니', 'MEL': '멜버른'
-        },
         classMapping: {
             'economy': 'Y',
             'business': 'C',
@@ -131,20 +90,6 @@ const PLATFORM_TEMPLATES = {
         domain: 'www.expedia.co.kr',
         baseUrl: 'https://www.expedia.co.kr/Flights-Search',
         template: '?leg1=from:{departureName},to:{arrivalName},departure:{departureDateExpedia}TANYT&leg2=from:{arrivalName},to:{departureName},departure:{returnDateExpedia}TANYT&trip=roundtrip&passengers=adults:{passengers},children:0,infantinlap:N&options=cabinClass:{cabinClass}&mode=search&pageId=0&siteid=100240&langid=1042&affcid=kr.network.linkprice.A100699161&afflid=A100699161|293188891UUcVf|9999|3|0',
-        cityNameMapping: {
-            'ICN': '인천 (ICN)', 'GMP': '서울 (GMP)', 'SEL': '서울 (GMP)',
-            'NRT': '도쿄 (NRT)', 'HND': '도쿄 (HND)', 'TYO': '도쿄 (NRT)',
-            'KIX': '오사카 (KIX)', 'OSA': '오사카 (KIX)', 'FUK': '후쿠오카 (FUK)',
-            'BKK': '방콕 (BKK)', 'DMK': '방콕 (DMK)',
-            'TPE': '타이베이 (TPE)', 'SIN': '싱가포르 (SIN)', 'HKG': '홍콩 (HKG)',
-            'PVG': '상하이 (PVG)', 'PEK': '베이징 (PEK)',
-            'SGN': '호치민 (SGN)', 'HAN': '하노이 (HAN)',
-            'MNL': '마닐라 (MNL)', 'CGK': '자카르타 (CGK)', 'DPS': '발리 (DPS)',
-            'KUL': '쿠알라룸푸르 (KUL)', 'LAX': '로스앤젤레스 (LAX)',
-            'JFK': '뉴욕 (JFK)', 'SFO': '샌프란시스코 (SFO)',
-            'LHR': '런던 (LHR)', 'CDG': '파리 (CDG)', 'FRA': '프랑크푸르트 (FRA)',
-            'AMS': '암스테르담 (AMS)', 'SYD': '시드니 (SYD)', 'MEL': '멜버른 (MEL)'
-        },
         cabinClassMapping: {
             'economy': 'coach',
             'business': 'business',
@@ -161,19 +106,6 @@ const PLATFORM_TEMPLATES = {
         domain: 'www.hotelscombined.co.kr',
         baseUrl: 'https://www.hotelscombined.co.kr/flights',
         template: '/{departureCode}-{arrivalCode}/{departureDate}/{returnDate}/{passengers}adults?sort=bestflight_a&end_cid=293188911UUdGX68da3f3665&skipapp=true',
-        codeMapping: {
-            'SEL': 'SEL', 'ICN': 'SEL', 'GMP': 'SEL',
-            'TYO': 'TYO', 'NRT': 'TYO', 'HND': 'TYO',
-            'OSA': 'OSA', 'KIX': 'OSA', 'FUK': 'FUK',
-            'BKK': 'BKK', 'DMK': 'BKK', 'TPE': 'TPE', 
-            'SIN': 'SIN', 'HKG': 'HKG', 'PVG': 'PVG',
-            'PEK': 'PEK', 'SGN': 'SGN', 'HAN': 'HAN',
-            'MNL': 'MNL', 'CGK': 'CGK', 'DPS': 'DPS',
-            'KUL': 'KUL', 'LAX': 'LAX', 'JFK': 'JFK',
-            'SFO': 'SFO', 'LHR': 'LHR', 'CDG': 'CDG',
-            'FRA': 'FRA', 'AMS': 'AMS', 'SYD': 'SYD',
-            'MEL': 'MEL', 'AKL': 'AKL'
-        },
         dateFormat: 'YYYY-MM-DD',
         description: '호텔스컴바인 항공권 검색'
     },
@@ -185,19 +117,6 @@ const PLATFORM_TEMPLATES = {
         domain: 'NOL.COM',
         baseUrl: 'https://flight-web.yanolja.com/flights/list',
         template: '?departurePlaceTypeCode=CITY&departurePlaceCode={departureCode}&arrivalPlaceTypeCode=CITY&arrivalPlaceCode={arrivalCode}&cabinClasses={cabinClass}&adultsCount={passengers}&inboundDepartureDate={returnDate}&outboundDepartureDate={departureDate}',
-        codeMapping: {
-            'SEL': 'SEL', 'ICN': 'SEL', 'GMP': 'SEL',
-            'TYO': 'TYO', 'NRT': 'TYO', 'HND': 'TYO',
-            'OSA': 'OSA', 'KIX': 'OSA', 'FUK': 'FUK',
-            'BKK': 'BKK', 'DMK': 'BKK', 'TPE': 'TPE',
-            'SIN': 'SIN', 'HKG': 'HKG', 'PVG': 'PVG',
-            'PEK': 'PEK', 'SGN': 'SGN', 'HAN': 'HAN',
-            'MNL': 'MNL', 'CGK': 'CGK', 'DPS': 'DPS',
-            'KUL': 'KUL', 'LAX': 'LAX', 'JFK': 'JFK',
-            'SFO': 'SFO', 'LHR': 'LHR', 'CDG': 'CDG',
-            'FRA': 'FRA', 'AMS': 'AMS', 'SYD': 'SYD',
-            'MEL': 'MEL', 'AKL': 'AKL'
-        },
         cabinClassMapping: {
             'economy': 'ECONOMY',
             'business': 'BUSINESS',
@@ -254,9 +173,9 @@ function generatePlatformURL(platformKey, platform, formData) {
         returnExpedia: DATE_FORMATTERS['YYYY.MM.DD'](returnDate) // YYYY.MM.DD
     };
     
-    // 코드 변환
-    const departureCode = getMappedCode(formData.departure, platform.codeMapping);
-    const arrivalCode = getMappedCode(formData.arrival, platform.codeMapping);
+    // 동적 코드 변환
+    const departureCode = getMappedCode(formData.departure, platformKey);
+    const arrivalCode = getMappedCode(formData.arrival, platformKey);
     
     if (!departureCode || !arrivalCode) {
         return null;
@@ -286,13 +205,13 @@ function generatePlatformURL(platformKey, platform, formData) {
     
     // 특별한 처리가 필요한 플랫폼들
     if (platformKey === 'expedia') {
-        // 익스피디아는 도시명 사용
-        variables.departureName = platform.cityNameMapping[departureCode] || departureCode;
-        variables.arrivalName = platform.cityNameMapping[arrivalCode] || arrivalCode;
+        // 익스피디아는 도시명 사용 - 동적으로 생성
+        variables.departureName = getCityNameForExpedia(formData.departure);
+        variables.arrivalName = getCityNameForExpedia(formData.arrival);
     } else if (platformKey === 'myrealtrip') {
-        // 마이리얼트립은 도시명 사용
-        variables.departureName = platform.cityNameMapping[departureCode] || departureCode;
-        variables.arrivalName = platform.cityNameMapping[arrivalCode] || arrivalCode;
+        // 마이리얼트립은 도시명 사용 - 동적으로 생성
+        variables.departureName = getCityNameForMyrealtrip(formData.departure);
+        variables.arrivalName = getCityNameForMyrealtrip(formData.arrival);
     } else if (platformKey === 'yanolja') {
         // 야놀자는 정상적으로 처리됨
         // 변수들이 올바르게 설정되었는지 확인
@@ -309,12 +228,129 @@ function generatePlatformURL(platformKey, platform, formData) {
     return url + template;
 }
 
-// 코드 매핑 함수
-function getMappedCode(originalCode, mapping) {
-    if (mapping && mapping[originalCode]) {
-        return mapping[originalCode];
+// 플랫폼별 코드 변환 규칙
+const PLATFORM_CODE_RULES = {
+    naver: {
+        // 네이버는 대문자 IATA 코드 사용, 특별한 통합 코드만 매핑
+        transform: (code) => code.toUpperCase(),
+        specialMappings: {
+            'SEL': 'SEL',  // 서울 통합
+            'TYO': 'NRT',  // 도쿄 통합
+            'OSA': 'KIX'   // 오사카 통합
+        }
+    },
+    trip: {
+        // 트립닷컴은 소문자 사용
+        transform: (code) => code.toLowerCase(),
+        specialMappings: {
+            'SEL': 'sel',  // 서울 통합
+            'TYO': 'nrt',  // 도쿄 통합
+            'OSA': 'osa',  // 오사카 통합
+            'PVG': 'sha'   // 상하이 특별 매핑
+        }
+    },
+    skyscanner: {
+        // 스카이스캐너는 소문자 사용, 특별한 코드들
+        transform: (code) => code.toLowerCase(),
+        specialMappings: {
+            'SEL': 'sela',  // 서울 통합
+            'TYO': 'ctao',  // 도쿄 통합
+            'PVG': 'sha'    // 상하이 특별 매핑
+        }
+    },
+    myrealtrip: {
+        // 마이리얼트립은 코드 매핑 불필요 (도시명 사용)
+        transform: (code) => code,
+        specialMappings: {}
+    },
+    expedia: {
+        // 익스피디아는 코드 매핑 불필요 (도시명 사용)
+        transform: (code) => code,
+        specialMappings: {}
+    },
+    agoda: {
+        // 아고다는 대문자 IATA 코드 사용
+        transform: (code) => code.toUpperCase(),
+        specialMappings: {}
+    },
+    hotelscombined: {
+        // 호텔스컴바인은 대문자 IATA 코드 사용
+        transform: (code) => code.toUpperCase(),
+        specialMappings: {
+            'SEL': 'SEL',  // 서울 통합
+            'TYO': 'TYO',  // 도쿄 통합
+            'OSA': 'OSA'   // 오사카 통합
+        }
+    },
+    yanolja: {
+        // 야놀자는 대문자 IATA 코드 사용
+        transform: (code) => code.toUpperCase(),
+        specialMappings: {
+            'SEL': 'SEL',  // 서울 통합
+            'TYO': 'TYO',  // 도쿄 통합
+            'OSA': 'OSA'   // 오사카 통합
+        }
     }
-    return originalCode;
+};
+
+// 동적 코드 매핑 함수
+function getMappedCode(originalCode, platformKey) {
+    // airport mapping에서 해당 코드의 모든 codes 배열 가져오기
+    const airportInfo = getAirportInfo(originalCode);
+    if (!airportInfo || !airportInfo.codes) {
+        return originalCode;
+    }
+    
+    // 플랫폼별 변환 규칙 가져오기
+    const rules = PLATFORM_CODE_RULES[platformKey];
+    if (!rules) {
+        return originalCode;
+    }
+    
+    // 특별한 매핑이 있는지 먼저 확인
+    if (rules.specialMappings[originalCode]) {
+        return rules.specialMappings[originalCode];
+    }
+    
+    // airport mapping의 codes 배열에서 적절한 코드 찾기
+    for (const code of airportInfo.codes) {
+        // 원본 코드와 동일한 경우 (IATA 코드 우선)
+        if (code === originalCode) {
+            const transformedCode = rules.transform(code);
+            return transformedCode;
+        }
+    }
+    
+    // 원본 코드가 없으면 다른 코드들 중에서 찾기
+    for (const code of airportInfo.codes) {
+        const transformedCode = rules.transform(code);
+        
+        // 원본 코드와 변환된 코드가 다르면 (소문자/대문자 변환 등) 사용
+        if (code !== transformedCode) {
+            return transformedCode;
+        }
+    }
+    
+    // 변환이 필요없으면 첫 번째 코드 사용
+    return airportInfo.codes[0];
+}
+
+// 익스피디아용 도시명 생성 함수
+function getCityNameForExpedia(originalCode) {
+    const airportInfo = getAirportInfo(originalCode);
+    if (!airportInfo) {
+        return originalCode;
+    }
+    return `${airportInfo.city} (${originalCode})`;
+}
+
+// 마이리얼트립용 도시명 생성 함수
+function getCityNameForMyrealtrip(originalCode) {
+    const airportInfo = getAirportInfo(originalCode);
+    if (!airportInfo) {
+        return originalCode;
+    }
+    return airportInfo.city;
 }
 
 

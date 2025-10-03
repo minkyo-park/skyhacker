@@ -94,7 +94,7 @@ const PLATFORM_TEMPLATES = {
         color: '#0078d2',
         domain: 'www.expedia.co.kr',
         baseUrl: 'https://www.expedia.co.kr/Flights-Search',
-        template: '?leg1=from:{departureName},to:{arrivalName},departure:{departureDateExpedia}TANYT&leg2=from:{arrivalName},to:{departureName},departure:{returnDateExpedia}TANYT&trip=roundtrip&passengers=adults:{passengers},children:0,infantinlap:N&options=cabinClass:{cabinClass}&mode=search&pageId=0&siteid=100240&langid=1042&affcid=kr.network.linkprice.A100699161&afflid=A100699161|293188891UUcVf|9999|3|0',
+        template: '?flight-type=on&mode=search&trip=roundtrip&leg1=from:{departureNameEncoded},to:{arrivalNameEncoded},departure:{departureDateExpedia}TANYT,fromType:U,toType:AIRPORT&leg2=from:{arrivalNameEncoded},to:{departureNameEncoded},departure:{returnDateExpedia}TANYT,fromType:AIRPORT,toType:U&options=cabinclass:{cabinClassLower}&fromDate={departureDateExpedia}&toDate={returnDateExpedia}&d1={departureDate}&d2={returnDate}&passengers=adults:{passengers},infantinlap:N',
         cabinClassMapping: {
             'economy': 'coach',
             'business': 'business',
@@ -218,6 +218,11 @@ function generatePlatformURL(platformKey, platform, formData) {
         // 익스피디아는 도시명 사용 - 동적으로 생성
         variables.departureName = getCityNameForExpedia(formData.departure);
         variables.arrivalName = getCityNameForExpedia(formData.arrival);
+        // URL 인코딩된 도시명
+        variables.departureNameEncoded = encodeURIComponent(variables.departureName);
+        variables.arrivalNameEncoded = encodeURIComponent(variables.arrivalName);
+        // 소문자 좌석 클래스
+        variables.cabinClassLower = platform.cabinClassMapping ? platform.cabinClassMapping[formData.cabinClass].toLowerCase() : formData.cabinClass.toLowerCase();
     } else if (platformKey === 'myrealtrip') {
         // 마이리얼트립은 도시명 사용 - 동적으로 생성
         variables.departureName = getCityNameForMyrealtrip(formData.departure);

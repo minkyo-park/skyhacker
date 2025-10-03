@@ -26,7 +26,7 @@ const PLATFORM_TEMPLATES = {
         color: '#ff6900',
         domain: 'kr.trip.com',
         baseUrl: 'https://kr.trip.com',
-        template: '/flights/showfarefirst?dcity={departureCode}&acity={arrivalCode}&ddate={departureDate}&rdate={returnDate}&triptype=rt&class={classCode}&lowpricesource=searchform&quantity={passengers}&searchboxarg=t&nonstoponly=off&locale=ko-KR&curr=KRW&sid=2908853&allianceid=664610&ouid=A100692912%7C293189231UWsAf%7C9999%7C3%7C0',
+        template: '/flights/showfarefirst?dcity={departureCodeLower}&acity={arrivalCodeLower}&ddate={departureDate}&rdate={returnDate}&dairport={departureCodeLower}&triptype=rt&class={classCode}&lowpricesource=searchform&quantity={passengers}&searchboxarg=t&nonstoponly=off&locale=ko-KR&curr=KRW&sid=2908853&allianceid=664610&ouid=A100692912%7C293189231UWsAf%7C9999%7C3%7C0',
         classMapping: {
             'economy': 'y',
             'business': 'c',
@@ -123,7 +123,7 @@ const PLATFORM_TEMPLATES = {
         color: '#ff6b35',
         domain: 'NOL.COM',
         baseUrl: 'https://flight-web.yanolja.com',
-        template: '/flights/list?departurePlaceTypeCode=CITY&departurePlaceCode={departureCode}&arrivalPlaceTypeCode=CITY&arrivalPlaceCode={arrivalCode}&cabinClasses={cabinClass}&adultsCount={passengers}&inboundDepartureDate={returnDate}&outboundDepartureDate={departureDate}',
+        template: '/flights/list?departurePlaceTypeCode=AIRPORT&departurePlaceCode={departureCode}&arrivalPlaceTypeCode=CITY&arrivalPlaceCode={arrivalCode}&cabinClasses={cabinClass}&adultsCount={passengers}&inboundDepartureDate={returnDate}&outboundDepartureDate={departureDate}',
         cabinClassMapping: {
             'economy': 'ECONOMY',
             'business': 'BUSINESS',
@@ -196,6 +196,8 @@ function generatePlatformURL(platformKey, platform, formData) {
     const variables = {
         departureCode: departureCode,
         arrivalCode: arrivalCode,
+        departureCodeLower: departureCode.toLowerCase(),
+        arrivalCodeLower: arrivalCode.toLowerCase(),
         departureDate: dateFormats.standard,
         returnDate: formData.returnDate,
         departureDateShort: dateFormats.short,

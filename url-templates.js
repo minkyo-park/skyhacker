@@ -34,7 +34,7 @@ const PLATFORM_TEMPLATES = {
         },
         dateFormat: 'YYYY-MM-DD',
         description: '트립닷컴 항공권 검색',
-        redirectUrl: null
+        redirectUrl: 'http://app.ac/tErYxpS43'
     },
     
     skyscanner: {
@@ -51,7 +51,7 @@ const PLATFORM_TEMPLATES = {
         },
         dateFormat: 'DDMMYY',
         description: '스카이스캐너 항공권 검색',
-        redirectUrl: null
+        redirectUrl: 'https://skyscanner.pxf.io/dOLEVK'
     },
     
     myrealtrip: {
@@ -68,7 +68,7 @@ const PLATFORM_TEMPLATES = {
         },
         dateFormat: 'YYYY-MM-DD',
                                                                                                                                                                                 description: '마이리얼트립 항공권 검색',
-        redirectUrl: null
+        redirectUrl: 'https://myrealt.rip/MKUt88'
     },
     
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         agoda: {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
@@ -85,7 +85,7 @@ const PLATFORM_TEMPLATES = {
         },
         dateFormat: 'YYYY-MM-DD',
         description: '아고다 항공권 검색',
-        redirectUrl: 'https://agoda.com'
+        redirectUrl: 'http://app.ac/9bCcVgl23'
     },
     
     expedia: {
@@ -102,7 +102,7 @@ const PLATFORM_TEMPLATES = {
         },
         dateFormat: 'YYYY.MM.DD',
         description: '익스피디아 항공권 검색',
-        redirectUrl: null
+        redirectUrl: 'http://app.ac/P3rewXJ93'
     },
     
     hotelscombined: {
@@ -114,7 +114,7 @@ const PLATFORM_TEMPLATES = {
         template: '/{departureCode}-{arrivalCode}/{departureDate}/{returnDate}/{passengers}adults?sort=bestflight_a&end_cid=293188911UUdGX68da3f3665&skipapp=true',
         dateFormat: 'YYYY-MM-DD',
         description: '호텔스컴바인 항공권 검색',
-        redirectUrl: null
+        redirectUrl: 'http://app.ac/b3rewiJ33'
     },
     
     yanolja: {
@@ -131,7 +131,7 @@ const PLATFORM_TEMPLATES = {
         },
         dateFormat: 'YYYY-MM-DD',
         description: '야놀자 항공권 검색',
-        redirectUrl: null
+        redirectUrl: 'http://app.ac/yjMf3aa23null'
     }
 };
 

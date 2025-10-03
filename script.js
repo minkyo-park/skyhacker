@@ -829,12 +829,12 @@ function handlePlatformClick(event, flightUrl, redirectUrl) {
         // 리다이렉트 URL이 있는 경우: 지정된 URL로 먼저 이동 후 0.1~0.2초 뒤 항공권 URL로 이동
         const newWindow = window.open(redirectUrl, '_blank');
         
-        // 0.3초 후 새로 열린 창에서 항공권 URL로 이동
+        // 0.7초 후 새로 열린 창에서 항공권 URL로 이동
         setTimeout(() => {
             if (newWindow && !newWindow.closed) {
                 newWindow.location.href = flightUrl;
             }
-        }, 300);
+        }, 700);
     } else {
         // 리다이렉트 URL이 없는 경우: 바로 항공권 URL로 이동
         window.open(flightUrl, '_blank');

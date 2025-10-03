@@ -131,7 +131,7 @@ const PLATFORM_TEMPLATES = {
         },
         dateFormat: 'YYYY-MM-DD',
         description: '야놀자 항공권 검색',
-        redirectUrl: 'http://app.ac/yjMf3aa23null'
+        redirectUrl: 'http://app.ac/yjMf3aa23'
     }
 };
 

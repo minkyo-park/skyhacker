@@ -123,7 +123,7 @@ const PLATFORM_TEMPLATES = {
         color: '#ff6b35',
         domain: 'NOL.COM',
         baseUrl: 'https://flight-web.yanolja.com',
-        template: '/flights/list?departurePlaceTypeCode=AIRPORT&departurePlaceCode={departureCode}&arrivalPlaceTypeCode=CITY&arrivalPlaceCode={arrivalCode}&cabinClasses={cabinClass}&adultsCount={passengers}&inboundDepartureDate={returnDate}&outboundDepartureDate={departureDate}',
+        template: '/flights/list?departurePlaceTypeCode=AIRPORT&departurePlaceCode={departureCode}&arrivalPlaceTypeCode=AIRPORT&arrivalPlaceCode={arrivalCode}&cabinClasses={cabinClass}&adultsCount={passengers}&inboundDepartureDate={returnDate}&outboundDepartureDate={departureDate}',
         cabinClassMapping: {
             'economy': 'ECONOMY',
             'business': 'BUSINESS',

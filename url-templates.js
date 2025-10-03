@@ -25,8 +25,8 @@ const PLATFORM_TEMPLATES = {
         icon: 'T',
         color: '#ff6900',
         domain: 'kr.trip.com',
-        baseUrl: 'https://kr.trip.com/flights',
-        template: '/showfarefirst?dcity={departureCode}&acity={arrivalCode}&ddate={departureDate}&rdate={returnDate}&triptype=rt&class={classCode}&lowpricesource=searchform&quantity={passengers}&searchboxarg=t&nonstoponly=off&locale=ko-KR&curr=KRW&sid=2908853&allianceid=664610&ouid=A100692912%7C293189231UWsAf%7C9999%7C3%7C0',
+        baseUrl: 'https://kr.trip.com',
+        template: '/flights/showfarefirst?dcity={departureCode}&acity={arrivalCode}&ddate={departureDate}&rdate={returnDate}&triptype=rt&class={classCode}&lowpricesource=searchform&quantity={passengers}&searchboxarg=t&nonstoponly=off&locale=ko-KR&curr=KRW&sid=2908853&allianceid=664610&ouid=A100692912%7C293189231UWsAf%7C9999%7C3%7C0',
         classMapping: {
             'economy': 'y',
             'business': 'c',
@@ -122,8 +122,8 @@ const PLATFORM_TEMPLATES = {
         icon: 'Y',
         color: '#ff6b35',
         domain: 'NOL.COM',
-        baseUrl: 'https://flight-web.yanolja.com/flights/list',
-        template: '?departurePlaceTypeCode=CITY&departurePlaceCode={departureCode}&arrivalPlaceTypeCode=CITY&arrivalPlaceCode={arrivalCode}&cabinClasses={cabinClass}&adultsCount={passengers}&inboundDepartureDate={returnDate}&outboundDepartureDate={departureDate}',
+        baseUrl: 'https://flight-web.yanolja.com',
+        template: '/flights/list?departurePlaceTypeCode=CITY&departurePlaceCode={departureCode}&arrivalPlaceTypeCode=CITY&arrivalPlaceCode={arrivalCode}&cabinClasses={cabinClass}&adultsCount={passengers}&inboundDepartureDate={returnDate}&outboundDepartureDate={departureDate}',
         cabinClassMapping: {
             'economy': 'ECONOMY',
             'business': 'BUSINESS',

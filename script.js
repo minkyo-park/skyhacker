@@ -366,7 +366,7 @@ function displayLinks(links, formData = null) {
     
     platformLinks.innerHTML = links.map(link => `
         <div class="search-result-item">
-            <a href="${link.url}" target="_blank" class="platform-link-new">
+            <a href="${link.platform.redirectUrl || link.url}" target="_blank" class="platform-link-new" onclick="handlePlatformClick(event, '${link.url}', '${link.platform.redirectUrl || ''}')">
                 <div class="success-icon">
                     <img src="https://www.google.com/s2/favicons?domain=${link.platform.domain}" alt="${link.platform.name}" class="platform-favicon-new">
                 </div>
@@ -820,6 +820,26 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 1000);
 });
 
+
+// 플랫폼 클릭 처리 함수 (리다이렉트 로직)
+function handlePlatformClick(event, flightUrl, redirectUrl) {
+    event.preventDefault();
+    
+    if (redirectUrl && redirectUrl !== '') {
+        // 리다이렉트 URL이 있는 경우: 지정된 URL로 먼저 이동 후 0.1~0.2초 뒤 항공권 URL로 이동
+        const newWindow = window.open(redirectUrl, '_blank');
+        
+        // 0.15초 후 새로 열린 창에서 항공권 URL로 이동
+        setTimeout(() => {
+            if (newWindow && !newWindow.closed) {
+                newWindow.location.href = flightUrl;
+            }
+        }, 150);
+    } else {
+        // 리다이렉트 URL이 없는 경우: 바로 항공권 URL로 이동
+        window.open(flightUrl, '_blank');
+    }
+}
 
 // URL 복사 함수
 function copyToClipboard(url, element) {

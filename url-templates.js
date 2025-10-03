@@ -15,7 +15,8 @@ const PLATFORM_TEMPLATES = {
             'first': 'F'
         },
         dateFormat: 'YYYYMMDD',
-        description: '네이버 항공권 검색'
+        description: '네이버 항공권 검색',
+        redirectUrl: null
     },
     
     
@@ -32,7 +33,8 @@ const PLATFORM_TEMPLATES = {
             'first': 'f'
         },
         dateFormat: 'YYYY-MM-DD',
-        description: '트립닷컴 항공권 검색'
+        description: '트립닷컴 항공권 검색',
+        redirectUrl: null
     },
     
     skyscanner: {
@@ -48,7 +50,8 @@ const PLATFORM_TEMPLATES = {
             'first': 'first'
         },
         dateFormat: 'DDMMYY',
-        description: '스카이스캐너 항공권 검색'
+        description: '스카이스캐너 항공권 검색',
+        redirectUrl: null
     },
     
     myrealtrip: {
@@ -64,10 +67,11 @@ const PLATFORM_TEMPLATES = {
             'first': 'F'
         },
         dateFormat: 'YYYY-MM-DD',
-        description: '마이리얼트립 항공권 검색'
+                                                                                                                                                                                description: '마이리얼트립 항공권 검색',
+        redirectUrl: null
     },
     
-    agoda: {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        agoda: {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
         name: '아고다',
         icon: 'A',
         color: '#ff6900',
@@ -80,7 +84,8 @@ const PLATFORM_TEMPLATES = {
             'first': 'First'
         },
         dateFormat: 'YYYY-MM-DD',
-        description: '아고다 항공권 검색'
+        description: '아고다 항공권 검색',
+        redirectUrl: 'https://agoda.com'
     },
     
     expedia: {
@@ -96,7 +101,8 @@ const PLATFORM_TEMPLATES = {
             'first': 'first'
         },
         dateFormat: 'YYYY.MM.DD',
-        description: '익스피디아 항공권 검색'
+        description: '익스피디아 항공권 검색',
+        redirectUrl: null
     },
     
     hotelscombined: {
@@ -107,7 +113,8 @@ const PLATFORM_TEMPLATES = {
         baseUrl: 'https://www.hotelscombined.co.kr/flights',
         template: '/{departureCode}-{arrivalCode}/{departureDate}/{returnDate}/{passengers}adults?sort=bestflight_a&end_cid=293188911UUdGX68da3f3665&skipapp=true',
         dateFormat: 'YYYY-MM-DD',
-        description: '호텔스컴바인 항공권 검색'
+        description: '호텔스컴바인 항공권 검색',
+        redirectUrl: null
     },
     
     yanolja: {
@@ -123,7 +130,8 @@ const PLATFORM_TEMPLATES = {
             'first': 'FIRST'
         },
         dateFormat: 'YYYY-MM-DD',
-        description: '야놀자 항공권 검색'
+        description: '야놀자 항공권 검색',
+        redirectUrl: null
     }
 };
 

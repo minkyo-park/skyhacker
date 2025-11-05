@@ -104,6 +104,14 @@ function setupEventListeners() {
             hideSuggestions();
         }
     });
+    
+    // 배너 클릭 시 할인코드 페이지로 이동
+    const searchBanner = document.querySelector('.search-banner-card');
+    if (searchBanner) {
+        searchBanner.addEventListener('click', function() {
+            window.location.href = '/discount.html';
+        });
+    }
 }
 
 // 입력 처리
@@ -383,9 +391,16 @@ function displayLinks(links, formData = null) {
         </div>
     `).join('');
     
+    // 검색 결과 배너 표시
+    const searchBanner = document.getElementById('searchBanner');
+    if (searchBanner) {
+        searchBanner.style.display = 'block';
+        // 배너로 부드럽게 스크롤
+        searchBanner.scrollIntoView({ behavior: 'smooth' });
+    }
+    
     // 검색 결과 표시
     resultsSection.style.display = 'block';
-    resultsSection.scrollIntoView({ behavior: 'smooth' });
     
     // 수수료 안내 섹션 표시
     const commissionNotice = document.getElementById('commissionNotice');

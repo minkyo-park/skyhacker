@@ -117,6 +117,12 @@
                     </svg>
                     사용방법
                 </a>
+                <a href="/discount.html" class="nav-item">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M2 7h20M2 17h20M5 7V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v2M5 17v2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2M6 12h12"></path>
+                    </svg>
+                    할인코드
+                </a>
             </div>
         </div>
     </nav>
@@ -300,6 +306,44 @@
             </form>
         </main>
 
+        <!-- 검색 결과 배너 -->
+        <div id="searchBanner" class="search-banner-container" style="display: none;">
+            <div class="search-banner-card">
+                <svg class="search-banner-svg" viewBox="0 0 380 80" preserveAspectRatio="none">
+                    <defs>
+                        <linearGradient id="bannerGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:rgba(255,255,255,0.08)"></stop>
+                            <stop offset="50%" style="stop-color:rgba(255,255,255,0.04)"></stop>
+                            <stop offset="100%" style="stop-color:rgba(255,255,255,0.02)"></stop>
+                        </linearGradient>
+                    </defs>
+                    <path
+                        d="M 0,40 C 0,0 0,0 40,0 L 340,0 C 380,0 380,0 380,40 C 380,80 380,80 340,80 L 40,80 C 0,80 0,80 0,40 Z"
+                        fill="none"
+                        stroke="rgba(255,255,255,0.2)"
+                        stroke-width="0.5"
+                        class="search-banner-path glass-effect"
+                    ></path>
+                </svg>
+                <div class="search-banner-content">
+                    <div class="search-banner-avatar">
+                        <img class="image" alt="" src="https://uiverse.io/astronaut.png">
+                    </div>
+                    <div class="search-banner-body">
+                        <div class="search-banner-header">
+                            <div class="search-banner-title">SKY HACKER AI</div>
+                            <div class="search-banner-time">Now</div>
+                        </div>
+                        <div class="search-banner-message">
+                            아고다 · 트립닷컴 등에서 사용 가능한 할인코드를 확인해보세요                    </div>
+                        <div class="search-banner-meta">
+                            SKY HACKER AI가 실시간으로 수집하고 있어요
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <main id="searchResults" class="results-section" style="display: none;">
             <h2>검색 결과 링크</h2>
             <div id="platformLinks" class="platform-links"></div>
@@ -375,3 +419,4 @@ wcs_do();
 </script>
 </body>
 </html>
+
